@@ -1,4 +1,4 @@
-ï»¿<?
+<?
 /*********************************************************************
 **
 ** This file is part of the Update MediaWiki extension for MediaWiki
@@ -11,7 +11,7 @@
 
 class Specialupdatemediawiki extends SpecialPage {
         function __construct() {
-                parent::__construct( $name = 'updatemediawiki', $restriction = 'editinterface' ); // restrict to sysops
+                parent::__construct( $name = 'updatemediawiki', $restriction = 'updatecore' ); 
         }
  
         function execute( $par ) {
