@@ -23,7 +23,7 @@ $wgExtensionCredits['validextensionclass'][] = array(
        'path' => __FILE__,
        'name' => 'Update MediaWiki',
        'author' =>'Miguel PelÃ¡ez', 
-       'url' => 'https://www.mediawiki.org/wiki/Extension:Update_MediaWiki', 
+       'url' => 'https://www.mediawiki.org/wiki/Extension:UpdateMediaWiki', 
        'description' => 'Allows administrators and authorized users upgrade from a special page MediaWiki',
        'version'  => 0.1,
        );
