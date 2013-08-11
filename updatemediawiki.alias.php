@@ -1,14 +1,14 @@
-ï»¿<?php
+<?php
  /*********************************************************************
 *
-* Aliases for Update MediaWiki
+* Aliases for UpdateMediaWiki
 *
-* This file is part of the Update MediaWiki extension for MediaWiki
+* This file is part of the UpdateMediaWiki extension for MediaWiki
 * @file
 * @ingroup Extensions
 * @author Miguel PelÃ¡ez <miguel2706outlook.com>
 * @license http://www.gnu.org/copyleft/gpl.html GNU General Public License 2.0 or later
-* @link http://www.mediawiki.org/wiki/Extension:Ads Documentation
+* @link http://www.mediawiki.org/wiki/Extension:UpdateMediaWiki Documentation
 **********************************************************************/
 
 $specialPageAliases = array();

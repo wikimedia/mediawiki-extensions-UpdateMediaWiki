@@ -2,12 +2,12 @@
 
 /*********************************************************************
 **
-** This file is part of the Update MediaWiki extension for MediaWiki
+** This file is part of the UpdateMediaWiki extension for MediaWiki
 * @file
 * @ingroup Extensions
 * @author Miguel PelÃ¡ez <miguel2706outlook.com>
 * @license http://www.gnu.org/copyleft/gpl.html GNU General Public License 2.0 or later
-* @link http://www.mediawiki.org/wiki/Extension:Ads Documentation
+* @link http://www.mediawiki.org/wiki/Extension:UpdateMediaWiki Documentation
 **********************************************************************/
 
 # Alert the user that this is not a valid access point to MediaWiki if they try to access the special pages file directly.
@@ -21,7 +21,7 @@ EOT;
 
 $wgExtensionCredits['validextensionclass'][] = array(
        'path' => __FILE__,
-       'name' => 'Update MediaWiki',
+       'name' => 'UpdateMediaWiki',
        'author' =>'Miguel PelÃ¡ez', 
        'url' => 'https://www.mediawiki.org/wiki/Extension:UpdateMediaWiki', 
        'description' => 'Allows administrators and authorized users upgrade from a special page MediaWiki',
