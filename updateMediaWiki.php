@@ -1,4 +1,4 @@
-<?
+<?php
 
 /*********************************************************************
 **
@@ -19,14 +19,14 @@ EOT;
         exit( 1 );
 }
 
-$wgExtensionCredits['validextensionclass'][] = array(
+$wgExtensionCredits['specialpage'][] = array(
        'path' => __FILE__,
        'name' => 'UpdateMediaWiki',
-       'author' =>'Miguel PelÃ¡ez', 
-       'url' => 'https://www.mediawiki.org/wiki/Extension:UpdateMediaWiki', 
-       'description' => 'Allows administrators and authorized users upgrade from a special page MediaWiki',
+       'author' =>'Miguel Peláez',
+       'url' => 'https://www.mediawiki.org/wiki/Extension:UpdateMediaWiki',
+       'descriptionmsg' => 'updatemediawiki-desc',
        'version'  => 0.1,
-       );
+);
 $wgAutoloadClasses[ 'Specialupdatemediawiki' ] = __DIR__ . '/specialupdatemediawiki.php';
 $wgExtensionMessagesFiles[ 'updatemediawiki' ] = __DIR__ . '/updatemediawiki.i18n.php';
 $wgSpecialPages[ 'updatemediawiki' ] = 'Specialupdatemediawiki';
