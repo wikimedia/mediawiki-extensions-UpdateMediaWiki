@@ -29,7 +29,7 @@ $messages['en'] = array(
 	'updatemediawiki-update-database' => "Update the data base now?",
 	'updatemediawiki-update-updateready' => "Update ready",
 	'updatemediawiki-update-install' => "Install now?",
-	'updatemediawiki-update-updated' => "MediaWiki updated to version",
+	'updatemediawiki-update-updated' => "MediaWiki updated to version $1",
 	'updatemediawiki-update-error' => "Could not find latest realeases",
 	'updatemediawiki-update-aborted' => "Could not save new update. Operation aborted",
 );
@@ -50,7 +50,7 @@ $messages['es'] = array(
         'updatemediawiki-update-database' => "�Actualizar la base de datos ahora?",
         'updatemediawiki-update-updateready' => "Actualizaci�n lista",
         'updatemediawiki-update-install' => "�Instalar ahora?",
-        'updatemediawiki-update-updated' => "MediaWiki actualizado a la versi�n",
+        'updatemediawiki-update-updated' => "MediaWiki actualizado a la versi�n $1",
         'updatemediawiki-update-error' => "No se pudo obtener las �ltimas actualizaciones",
         'updatemediawiki-update-aborted' => "No se pudo descargar la actualizaci�n. Operaci�n abortada",
 );

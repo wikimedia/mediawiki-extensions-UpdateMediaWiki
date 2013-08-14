@@ -84,7 +84,7 @@ if ($getVersions != '')
     
     if ($updated == true)
     {
-        $output->addWikiText( "<p class=\"success\">&raquo; ".wfMessage( 'updatemediawiki-update-updated' )->text().$aV.'</p>');
+        $output->addWikiText( "<p class=\"success\">&raquo; ".wfMessage( 'updatemediawiki-update-updated', '$aV' )->text().'</p>');
     }
     else if ($found != true) $output->addWikiText( wfMessage( 'updatemediawiki-update-nofound' )->text());
 
