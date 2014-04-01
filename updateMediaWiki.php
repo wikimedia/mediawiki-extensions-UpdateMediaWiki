@@ -5,7 +5,7 @@
 ** This file is part of the UpdateMediaWiki extension for MediaWiki
 * @file
 * @ingroup Extensions
-* @author Miguel PelÃ¡ez <miguel2706outlook.com>
+* @author Miguel Peláez <miguel2706outlook.com>
 * @license http://www.gnu.org/copyleft/gpl.html GNU General Public License 2.0 or later
 * @link http://www.mediawiki.org/wiki/Extension:UpdateMediaWiki Documentation
 **********************************************************************/
@@ -25,9 +25,11 @@ $wgExtensionCredits['specialpage'][] = array(
        'author' =>'Miguel Peláez',
        'url' => 'https://www.mediawiki.org/wiki/Extension:UpdateMediaWiki',
        'descriptionmsg' => 'updatemediawiki-desc',
-       'version'  => 0.1,
+       'version'  => '0.2.0',
 );
+
 $wgAutoloadClasses[ 'Specialupdatemediawiki' ] = __DIR__ . '/specialupdatemediawiki.php';
+$wgMessagesDirs['updatemediawiki'] = __DIR__ . '/i18n';
 $wgExtensionMessagesFiles[ 'updatemediawiki' ] = __DIR__ . '/updatemediawiki.i18n.php';
 $wgSpecialPages[ 'updatemediawiki' ] = 'Specialupdatemediawiki';
 $wgExtensionAliasesFiles['updatemediawiki'] = dirname( __FILE__ ) . '/updatemediawiki.alias.php';
