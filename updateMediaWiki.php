@@ -25,12 +25,12 @@ $wgExtensionCredits['specialpage'][] = array(
        'author' =>'Miguel Peláez',
        'url' => 'https://www.mediawiki.org/wiki/Extension:UpdateMediaWiki',
        'descriptionmsg' => 'updatemediawiki-desc',
-       'version'  => '0.2.0',
+       'version'  => '0.3.0',
 );
 
 $wgAutoloadClasses[ 'Specialupdatemediawiki' ] = __DIR__ . '/specialupdatemediawiki.php';
 $wgMessagesDirs['updatemediawiki'] = __DIR__ . '/i18n';
 $wgExtensionMessagesFiles[ 'updatemediawiki' ] = __DIR__ . '/updatemediawiki.i18n.php';
 $wgSpecialPages[ 'updatemediawiki' ] = 'Specialupdatemediawiki';
-$wgExtensionAliasesFiles['updatemediawiki'] = dirname( __FILE__ ) . '/updatemediawiki.alias.php';
+$wgExtensionMessagesFiles['updatemediawikiAlias'] = dirname( __FILE__ ) . '/updatemediawiki.alias.php';
 $wgSpecialPageGroups['updatemediawiki']='wiki';
