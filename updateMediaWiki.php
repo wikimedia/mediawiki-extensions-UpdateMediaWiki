@@ -33,4 +33,3 @@ $wgMessagesDirs['updatemediawiki'] = __DIR__ . '/i18n';
 $wgExtensionMessagesFiles[ 'updatemediawiki' ] = __DIR__ . '/updatemediawiki.i18n.php';
 $wgSpecialPages[ 'updatemediawiki' ] = 'Specialupdatemediawiki';
 $wgExtensionMessagesFiles['updatemediawikiAlias'] = dirname( __FILE__ ) . '/updatemediawiki.alias.php';
-$wgSpecialPageGroups['updatemediawiki']='wiki';

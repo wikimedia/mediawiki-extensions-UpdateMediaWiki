@@ -94,4 +94,8 @@ else $output->addWikiText( "<p>".wfMessage( 'updatemediawiki-update-error' )->te
 
 
         }
+
+	protected function getGroupName() {
+		return 'wiki';
+	}
 }
