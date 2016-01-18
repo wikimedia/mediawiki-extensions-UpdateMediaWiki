@@ -1,22 +1,22 @@
 {
-    "@metadata": {
-        "authors": [
-            "Miguel2706"
-        ]
-    },
-    "updatemediawiki": "Actualizar MediaWiki",
-    "updatemediawiki-desc": "Permite a los administradores y usuarios autorizados actualizar MediaWiki desde una página especial.",
-    "updatemediawiki-current": "Versión Actual",
-    "updatemediawiki-update-nofound": "No hay actualizaciones disponibles",
-    "updatemediawiki-update-found": "Nueva actualización encontrada",
-    "updatemediawiki-update-downloading": "Descargando nueva actualización",
-    "updatemediawiki-update-saved": "Nueva actualización descargada y guardada",
-    "updatemediawiki-update-exist": "La actualización ya se había descargado",
-    "updatemediawiki-update-copyready": "Copia lista",
-    "updatemediawiki-update-database": "¿Actualizar la base de datos ahora?",
-    "updatemediawiki-update-updateready": "Actualización lista",
-    "updatemediawiki-update-install": "¿Instalar ahora?",
-    "updatemediawiki-update-updated": "MediaWiki actualizado a la versión",
-    "updatemediawiki-update-error": "No se pudo obtener las últimas actualizaciones",
-    "updatemediawiki-update-aborted": "No se pudo descargar la actualización. Operación abortada"
+	"@metadata": {
+		"authors": [
+			"Miguel2706"
+		]
+	},
+	"updatemediawiki": "Actualizar MediaWiki",
+	"updatemediawiki-desc": "Permite a los administradores y usuarios autorizados actualizar MediaWiki desde una página especial.",
+	"updatemediawiki-current": "Versión Actual",
+	"updatemediawiki-update-nofound": "No hay actualizaciones disponibles",
+	"updatemediawiki-update-found": "Nueva actualización encontrada",
+	"updatemediawiki-update-downloading": "Descargando nueva actualización",
+	"updatemediawiki-update-saved": "Nueva actualización descargada y guardada",
+	"updatemediawiki-update-exist": "La actualización ya se había descargado",
+	"updatemediawiki-update-copyready": "Copia lista",
+	"updatemediawiki-update-database": "¿Actualizar la base de datos ahora?",
+	"updatemediawiki-update-updateready": "Actualización lista",
+	"updatemediawiki-update-install": "¿Instalar ahora?",
+	"updatemediawiki-update-updated": "MediaWiki actualizado a la versión",
+	"updatemediawiki-update-error": "No se pudo obtener las últimas actualizaciones",
+	"updatemediawiki-update-aborted": "No se pudo descargar la actualización. Operación abortada"
 }
