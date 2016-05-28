@@ -1,0 +1,30 @@
+{
+	"name": "UpdateMediaWiki",
+	"version": "0.4.0",
+	"author": [
+		"Miguel Pelaez"
+	],
+	"url": "https://www.mediawiki.org/wiki/Extension:UpdateMediaWiki",
+	"descriptionmsg": "updatemediawiki-desc",
+	"license-name": "GPL-2.0+",
+	"type": "extensions",
+	"requires": {
+		"MediaWiki": ">= 1.25.0"
+	},
+	"SpecialPages": {
+		"updatemediawiki": "Specialupdatemediawiki"
+	},
+	"MessagesDirs": {
+		"UpdateMediaWiki": [
+			"i18n"
+		]
+	},
+	"ExtensionMessagesFiles": {
+		"updatemediawiki": "updatemediawiki.i18n.php",
+		"updatemediawikiAlias": "updatemediawiki.alias.php"
+	},
+	"AutoloadClasses": {
+		"Specialupdatemediawiki": "specialupdatemediawiki.php"
+	},
+	"manifest_version": 1
+}
