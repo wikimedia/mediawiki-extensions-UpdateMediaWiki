@@ -10,12 +10,12 @@
 **********************************************************************/
 
 class Specialupdatemediawiki extends SpecialPage {
+
 	function __construct() {
-		parent::__construct( $name = 'updatemediawiki', $restriction = 'updatecore' ); 
+		parent::__construct( 'updatemediawiki', 'updatecore' );
 	}
 
 	function execute( $par ) {
-
 		// ...
 		if ( !$this->userCanExecute( $this->getUser() ) ) {
 			$this->displayRestrictionError();
@@ -26,76 +26,76 @@ class Specialupdatemediawiki extends SpecialPage {
 		$output = $this->getOutput();
 		$this->setHeaders();
 
-		$param = $request->getText( 'param' );
-
 		global $wgVersion, $IP;
-		$getVersions = substr(file_get_contents('https://www.mediawiki.org/w/index.php?title=Template:MW_stable_release_number&action=raw'), 0, 6) or die ('ERROR');
-		if ($getVersions != '') {
+		$getVersion = json_decode( file_get_contents( 'https://www.mediawiki.org/w/api.php?action=parse&format=json&text=%7B%7B%23invoke%3AVersion%7Cget%7Cstable%7Cversion%7D%7D&prop=text&disablelimitreport=1&disableeditsection=1&preview=1&disabletoc=1&contentmodel=wikitext' ), true ) or die ( 'ERROR' );
+		$aV = $getVersion["parse"]["text"]["*"];
+		$updated = false;
+		$found = false;
+		if ( !empty( $aV ) ) {
 			//If we managed to access that file, then lets break up those release versions into an array.
-			$output->addWikiText( "== ". wfMessage( 'updatemediawiki-current' )->text() ." ".$wgVersion." == " );
-			$versionList = explode("\\n", $getVersions);
-			$mainVersion = substr($getVersions, 0, 4);
-			foreach ( $versionList as $aV ) {
-				if ( $aV > $wgVersion ) {
-					$output->addWikiText( "<p>".wfMessage( 'updatemediawiki-update-found' )->text()."v".$aV."</p>" );
-					$found = true;
-					 //Download The File If We Do Not Have It
-					if ( !is_file( __DIR__ . '/Updates/mediawiki-'.$aV.'.tar.gz' ) ) {
-						$output->addWikiText( "<p>".wfMessage( 'updatemediawiki-update-downloading' )->text()."</p>" );
-						$newUpdate = file_get_contents('http://download.wikimedia.org/mediawiki/'.$mainVersion.'/mediawiki-'.$aV.'.tar.gz');
-						if ( !is_dir( __DIR__ . '/Updates' ) ) {
-							mkdir( __DIR__ . "/Updates", 0755 );
-						}
-						$dlHandler = fopen( __DIR__ . '/Updates/mediawiki-'.$aV.'.tar.gz', 'w');
-						if ( !fwrite( $dlHandler, $newUpdate ) ) {
-							$output->addWikiText( "<p>" . wfMessage( 'updatemediawiki-update-aborted' )->text() . "</p>" );
-							exit();
-						}
-						fclose( $dlHandler );
-						$output->addWikiText( "<p>" . wfMessage( 'updatemediawiki-update-saved' )->text() . "</p>" );
-					} else {
-						$output->addWikiText( "<p>" . wfMessage( 'updatemediawiki-update-exist' )->text() . "</p>");
+			$output->addWikiText( "== " . $this->msg( 'updatemediawiki-current', $wgVersion )->text() . " ==" );
+			$aV = str_replace( "<p>", "", $aV );
+			$aV = str_replace( "</p>", "", $aV );
+			$aV = str_replace( "\n", "", $aV );
+			$mainVersion = substr( $aV, 0, 4 );
+			if ( $aV > $wgVersion ) {
+				$output->addWikiText( "<p>" . $this->msg( 'updatemediawiki-update-found', "v{$aV}" )->text() . "</p>" );
+				$found = true;
+				 //Download The File If We Do Not Have It
+				if ( !is_file( __DIR__ . "/Updates/mediawiki-{$aV}.tar.gz" ) ) {
+					$output->addWikiText( "<p>" . wfMessage( 'updatemediawiki-update-downloading' )->text() . "</p>" );
+					$newUpdate = file_get_contents( "http://download.wikimedia.org/mediawiki/{$mainVersion}/mediawiki-{$aV}.tar.gz" );
+					if ( !is_dir( __DIR__ . '/Updates' ) ) {
+						mkdir( __DIR__ . "/Updates", 0755 );
+					}
+					$dlHandler = fopen( __DIR__ . "/Updates/mediawiki-{$aV}.tar.gz", 'w');
+					if ( !fwrite( $dlHandler, $newUpdate ) ) {
+						$output->addWikiText( "<p>" . $this->msg( 'updatemediawiki-update-aborted' )->text() . "</p>" );
+						exit();
+					}
+					fclose( $dlHandler );
+					$output->addWikiText( "<p>" . $this->msg( 'updatemediawiki-update-saved' )->text() . "</p>" );
+				} else {
+					$output->addWikiText( "<p>" . $this->msg( 'updatemediawiki-update-exist' )->text() . "</p>" );
+				}
+
+				if ( $par == "doUpdate" ) {
+					//Open The File And Do Stuff
+					$gz = new PharData( "/Updates/mediawiki-{$aV}.tar.gz" );
+					$output->addWikiText( "<ul>" );
+
+					//Make the directory if we need to...
+					if ( !is_dir( "/Updates{$aV}" ) ) {
+						mkdir( __DIR__ . "/Updates{$aV}", 0755 );
 					}
 
-					if ( $par == "doUpdate" ) {
-						//Open The File And Do Stuff
-						$gz = new PharData('/Updates/mediawiki-'.$aV.'.tar.gz');
-						$output->addWikiText( "<ul>");
-						
-						//Make the directory if we need to...
-						if ( !is_dir ( "/Updates" . $aV ) ) {
-							 mkdir( __DIR__ . "/Updates" . $aV, 0755 );
-						}
+					//Overwrite the file
 
-						//Overwrite the file
+					$gz = decompress(); // creates files.tar
+					// unarchive from the tar
+					$phar = new PharData( "Updates/mediawiki-{$aV}.tar" );
+					$phar->extractTo( $IP );
+					$output->addWikiText( "<p>" . $this->msg( 'updatemediawiki-update-ready' )->text() . " [$IP/mw-config " . wfMessage( 'updatemediawiki-update-database' )->text() . "]</p>" );
 
-						$gz = decompress(); // creates files.tar
-						// unarchive from the tar
-						$phar = new PharData('Updates/mediawiki-'.$aV.'.tar');
-						$phar->extractTo($IP);
-						$output->addWikiText( "<p>".wfMessage( 'updatemediawiki-update-ready' )->text()." [".$IP."/mw-config ".wfMessage( 'updatemediawiki-update-database' )->text()."]</p>");
-
-						$output->addWikiText( "</ul>");
-						$updated = true;
-					} else {
-						$output->addWikiText( "<p>".wfMessage( 'updatemediawiki-update-updateready' )->text()." [[/doUpdate|".wfMessage( 'updatemediawiki-update-install' )->text()."]]</p>");
-					}
-					break;
+					$output->addWikiText( "</ul>" );
+					$updated = true;
+				} else {
+					$output->addWikiText( "<p>" . $this->msg( 'updatemediawiki-update-updateready' )->text() . " [[Special:Updatemediawiki/doUpdate|" . $this->msg( 'updatemediawiki-update-install' )->text() . "]]</p>" );
 				}
 			}
 		}
 
-		if ( $updated == true ) {
-			$output->addWikiText( "<p class=\"success\">&raquo; ".wfMessage( 'updatemediawiki-update-updated', '$aV' )->text().'</p>');
-		} elseif ( $found != true ) {
-			$output->addWikiText( wfMessage( 'updatemediawiki-update-nofound' )->text() );
+		if ( $updated === true ) {
+			$output->addWikiText( '<p class="success">&raquo; ' . $this->msg( 'updatemediawiki-update-updated', $aV )->text() . '</p>' );
+		} elseif ( $found !== true ) {
+			$output->addWikiText( '<p>' . $this->msg( 'updatemediawiki-update-nofound' )->text() . '</p>' );
 		} else {
-			$output->addWikiText( "<p>".wfMessage( 'updatemediawiki-update-error' )->text().'</p>');
+			$output->addWikiText( '<p>' . $this->msg( 'updatemediawiki-update-error' )->text() . '</p>' );
 		}
-
 	}
 
 	protected function getGroupName() {
 		return 'wiki';
 	}
+
 }
