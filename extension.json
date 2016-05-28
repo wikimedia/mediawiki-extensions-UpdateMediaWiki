@@ -12,7 +12,7 @@
 		"MediaWiki": ">= 1.25.0"
 	},
 	"SpecialPages": {
-		"updatemediawiki": "Specialupdatemediawiki"
+		"UpdateMediaWiki": "SpecialUpdateMediaWiki"
 	},
 	"MessagesDirs": {
 		"UpdateMediaWiki": [
@@ -20,10 +20,10 @@
 		]
 	},
 	"ExtensionMessagesFiles": {
-		"updatemediawikiAlias": "updatemediawiki.alias.php"
+		"UpdateMediaWikiAlias": "UpdateMediaWiki.alias.php"
 	},
 	"AutoloadClasses": {
-		"Specialupdatemediawiki": "specialupdatemediawiki.php"
+		"SpecialUpdateMediaWiki": "SpecialUpdateMediaWiki.php"
 	},
 	"manifest_version": 1
 }

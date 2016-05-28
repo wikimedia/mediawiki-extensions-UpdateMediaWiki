@@ -17,12 +17,12 @@ $specialPageAliases = array();
  * @author Miguel2706
  */
 $specialPageAliases[ 'en' ] = array(
-	'updatemediawiki' => array( 'updatemediawiki', 'Update MediaWiki' ),
+	'UpdateMediaWiki' => array( 'UpdateMediaWiki', 'Update MediaWiki' ),
 );
 
 /** Spanish
  * @author Miguel2706
  */
 $specialPageAliases[ 'es' ] = array(
-	'updatemediawiki' => array( 'ActualizarMediaWiki', 'Actualizar MediaWiki' ),
+	'UpdateMediaWiki' => array( 'ActualizarMediaWiki', 'Actualizar MediaWiki' ),
 );

@@ -9,10 +9,10 @@
 * @link http://www.mediawiki.org/wiki/Extension:UpdateMediaWiki Documentation
 **********************************************************************/
 
-class Specialupdatemediawiki extends SpecialPage {
+class SpecialUpdateMediaWiki extends SpecialPage {
 
 	function __construct() {
-		parent::__construct( 'updatemediawiki', 'updatecore' );
+		parent::__construct( 'UpdateMediaWiki', 'updatecore' );
 	}
 
 	function execute( $par ) {
@@ -80,7 +80,7 @@ class Specialupdatemediawiki extends SpecialPage {
 					$output->addWikiText( "</ul>" );
 					$updated = true;
 				} else {
-					$output->addWikiText( "<p>" . $this->msg( 'updatemediawiki-update-updateready' )->text() . " [[Special:Updatemediawiki/doUpdate|" . $this->msg( 'updatemediawiki-update-install' )->text() . "]]</p>" );
+					$output->addWikiText( "<p>" . $this->msg( 'updatemediawiki-update-updateready' )->text() . " [[Special:UpdateMediaWiki/doUpdate|" . $this->msg( 'updatemediawiki-update-install' )->text() . "]]</p>" );
 				}
 			}
 		}
