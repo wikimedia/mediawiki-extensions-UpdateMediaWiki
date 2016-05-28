@@ -20,7 +20,6 @@
 		]
 	},
 	"ExtensionMessagesFiles": {
-		"updatemediawiki": "updatemediawiki.i18n.php",
 		"updatemediawikiAlias": "updatemediawiki.alias.php"
 	},
 	"AutoloadClasses": {
