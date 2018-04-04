@@ -37,3 +37,8 @@ $specialPageAliases[ 'en' ] = [
 $specialPageAliases[ 'es' ] = [
 	'UpdateMediaWiki' => [ 'ActualizarMediaWiki', 'Actualizar_MediaWiki' ],
 ];
+
+/** Hebrew (עברית) */
+$specialPageAliases[ 'he' ] = [
+	'UpdateMediaWiki' => [ 'עדכון_התוכנה' ],
+];
