@@ -1,8 +1,8 @@
 {
 	"name": "UpdateMediaWiki",
-	"version": "0.4.0",
+	"version": "0.5.0",
 	"author": [
-		"Miguel Pelaez"
+		"[https://www.mediawiki.org/wiki/User:KernelFreeze Miguel Peláez]"
 	],
 	"url": "https://www.mediawiki.org/wiki/Extension:UpdateMediaWiki",
 	"descriptionmsg": "updatemediawiki-desc",
@@ -23,7 +23,7 @@
 		"UpdateMediaWikiAlias": "UpdateMediaWiki.alias.php"
 	},
 	"AutoloadClasses": {
-		"SpecialUpdateMediaWiki": "SpecialUpdateMediaWiki.php"
+		"SpecialUpdateMediaWiki": "includes/SpecialUpdateMediaWiki.php"
 	},
 	"manifest_version": 1
 }
