@@ -1,5 +1,5 @@
 {
-	"@metadata": {},
+	"@metadata": [],
 	"updatemediawiki": "{{name}}",
 	"updatemediawiki-desc": "{{desc|name=Update MediaWiki|url=https://www.mediawiki.org/wiki/Extension:UpdateMediaWiki}}",
 	"updatemediawiki-current": "A header message",

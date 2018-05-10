@@ -1,0 +1,22 @@
+{
+	"@metadata": {
+		"authors": [
+			"Hedda"
+		]
+	},
+	"updatemediawiki": "MediaWiki'yi Güncelle",
+	"updatemediawiki-desc": "MediaWiki'yi özel bir sayfa aracılığıyla güncelleştirmeye izin verir",
+	"updatemediawiki-current": "Mevcut sürüm $1",
+	"updatemediawiki-update-nofound": "Güncelleme mevcut değil",
+	"updatemediawiki-update-found": "Yeni güncelleme bulundu: $1",
+	"updatemediawiki-update-downloading": "Yeni güncelleme indiriliyor",
+	"updatemediawiki-update-saved": "Güncelleme indirildi ve kaydedildi",
+	"updatemediawiki-update-exist": "Güncelleme zaten indirildi",
+	"updatemediawiki-update-copyready": "Kopyalama hazır",
+	"updatemediawiki-update-database": "Veritabanını şimdi güncelle?",
+	"updatemediawiki-update-updateready": "Güncelleme hazır",
+	"updatemediawiki-update-install": "Şimdi kur?",
+	"updatemediawiki-update-updated": "MediaWiki, sürüm $1 olarak güncellendi",
+	"updatemediawiki-update-error": "En yeni sürüm bulunamadı",
+	"updatemediawiki-update-aborted": "Yeni güncelleme kaydedilemedi. İşlem iptal edildi"
+}
