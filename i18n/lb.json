@@ -1,0 +1,14 @@
+{
+	"@metadata": {
+		"authors": [
+			"Robby"
+		]
+	},
+	"updatemediawiki": "MediaWiki aktualiséieren",
+	"updatemediawiki-current": "Aktuell Versioun $1",
+	"updatemediawiki-update-nofound": "Keng Aktualiséierung disponibel",
+	"updatemediawiki-update-found": "Keng Aktualiséierung fonnt: $1",
+	"updatemediawiki-update-downloading": "Nei Aktualiséierung gëtt erofgelueden",
+	"updatemediawiki-update-copyready": "Kopie ass fäerdeg",
+	"updatemediawiki-update-install": "Elo installéieren?"
+}
