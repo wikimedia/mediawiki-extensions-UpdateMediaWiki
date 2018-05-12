@@ -23,8 +23,8 @@
  * @file
  * @ingroup Extensions
  * @author Miguel Peláez <miguel2706outlook.com>
- * @license http://www.gnu.org/copyleft/gpl.html GPL-2.0-or-later
- * @link http://www.mediawiki.org/wiki/Extension:UpdateMediaWiki Documentation
+ * @license https://www.gnu.org/copyleft/gpl.html GPL-2.0-or-later
+ * @link https://www.mediawiki.org/wiki/Extension:UpdateMediaWiki Documentation
  */
 $specialPageAliases = [];
 

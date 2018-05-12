@@ -21,8 +21,8 @@
  * @file
  * @ingroup Extensions
  * @author Miguel PelÃ¡ez <miguel2706outlook.com>
- * @license http://www.gnu.org/copyleft/gpl.html GPL-2.0-or-later
- * @link http://www.mediawiki.org/wiki/Extension:UpdateMediaWiki Documentation
+ * @license https://www.gnu.org/copyleft/gpl.html GPL-2.0-or-later
+ * @link https://www.mediawiki.org/wiki/Extension:UpdateMediaWiki Documentation
  */
 class SpecialUpdateMediaWiki extends SpecialPage {
 
@@ -59,7 +59,7 @@ class SpecialUpdateMediaWiki extends SpecialPage {
 				 // Download The File If We Do Not Have It
 				if ( !is_file( __DIR__ . "/../Updates/mediawiki-{$aV}.tar.gz" ) ) {
 					$output->addWikiText( "<p>" . wfMessage( 'updatemediawiki-update-downloading' )->text() . "</p>" );
-					$newUpdate = file_get_contents( "http://download.wikimedia.org/mediawiki/{$mainVersion}/mediawiki-{$aV}.tar.gz" );
+					$newUpdate = file_get_contents( "https://download.wikimedia.org/mediawiki/{$mainVersion}/mediawiki-{$aV}.tar.gz" );
 					if ( !is_dir( __DIR__ . '/../Updates' ) ) {
 						mkdir( __DIR__ . "/../Updates", 0755 );
 					}
