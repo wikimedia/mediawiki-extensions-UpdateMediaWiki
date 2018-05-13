@@ -1,22 +1,23 @@
 {
 	"@metadata": {
 		"authors": [
-			"Miguel2706"
+			"Miguel2706",
+			"Fitoschido"
 		]
 	},
-	"updatemediawiki": "Actualizar MediaWiki",
+	"updatemediawiki": "Actualización de MediaWiki",
 	"updatemediawiki-desc": "Permite a los administradores y usuarios autorizados actualizar MediaWiki desde una página especial.",
-	"updatemediawiki-current": "Versión Actual $1",
+	"updatemediawiki-current": "Versión actual: $1",
 	"updatemediawiki-update-nofound": "No hay actualizaciones disponibles",
 	"updatemediawiki-update-found": "Nueva actualización encontrada: $1",
 	"updatemediawiki-update-downloading": "Descargando nueva actualización",
 	"updatemediawiki-update-saved": "Nueva actualización descargada y guardada",
-	"updatemediawiki-update-exist": "La actualización ya se había descargado",
+	"updatemediawiki-update-exist": "La actualización ya se ha descargado",
 	"updatemediawiki-update-copyready": "Copia lista",
 	"updatemediawiki-update-database": "¿Actualizar la base de datos ahora?",
 	"updatemediawiki-update-updateready": "Actualización lista",
 	"updatemediawiki-update-install": "¿Instalar ahora?",
-	"updatemediawiki-update-updated": "MediaWiki actualizado a la versión",
+	"updatemediawiki-update-updated": "MediaWiki se actualizó a la versión $1",
 	"updatemediawiki-update-error": "No se pudo obtener las últimas actualizaciones",
-	"updatemediawiki-update-aborted": "No se pudo descargar la actualización. Operación abortada"
+	"updatemediawiki-update-aborted": "No se pudo guardar la actualización. Se interrumpió la operación"
 }

@@ -1,0 +1,15 @@
+{
+	"@metadata": {
+		"authors": [
+			"WikiPhoenix"
+		]
+	},
+	"updatemediawiki": "Uppdatera MediaWiki",
+	"updatemediawiki-update-nofound": "Ingen uppdatering är tillgänglig",
+	"updatemediawiki-update-found": "Ny uppdatering hittas: $1",
+	"updatemediawiki-update-downloading": "Laddar ned ny uppdatering",
+	"updatemediawiki-update-saved": "Uppdateringen laddades ned och sparades",
+	"updatemediawiki-update-copyready": "Kopieringen är redo",
+	"updatemediawiki-update-updateready": "Uppdateringen är redo",
+	"updatemediawiki-update-error": "Kunde inte hitta de senaste utgåvorna"
+}
