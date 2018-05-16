@@ -9,6 +9,11 @@
 	"updatemediawiki-update-nofound": "Keng Aktualiséierung disponibel",
 	"updatemediawiki-update-found": "Keng Aktualiséierung fonnt: $1",
 	"updatemediawiki-update-downloading": "Nei Aktualiséierung gëtt erofgelueden",
+	"updatemediawiki-update-saved": "Aktualiséierung erofgelueden a gespäichert",
 	"updatemediawiki-update-copyready": "Kopie ass fäerdeg",
-	"updatemediawiki-update-install": "Elo installéieren?"
+	"updatemediawiki-update-updateready": "Aktualiséierung prett",
+	"updatemediawiki-update-install": "Elo installéieren?",
+	"updatemediawiki-update-updated": "Mediawiki aktualiséiert op d'Versioun $1",
+	"updatemediawiki-update-error": "Déi neist Versioune konnten net fonnt ginn",
+	"updatemediawiki-update-aborted": "D'Aktualiséierung konnt net gespäichert ginn. Operatioun ofgebrach"
 }
