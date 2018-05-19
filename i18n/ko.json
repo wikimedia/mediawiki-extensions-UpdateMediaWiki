@@ -1,12 +1,13 @@
 {
 	"@metadata": {
 		"authors": [
-			"Ykhwong"
+			"Ykhwong",
+			"Garam"
 		]
 	},
 	"updatemediawiki": "미디어위키 업데이트",
 	"updatemediawiki-desc": "특수 문서를 통해 미디어위키를 업데이트할 수 있게 합니다",
-	"updatemediawiki-current": "현재 버전 $1",
+	"updatemediawiki-current": "현재 판 $1",
 	"updatemediawiki-update-nofound": "사용 가능한 업데이트 없음",
 	"updatemediawiki-update-found": "새로운 업데이트가 있습니다: $1",
 	"updatemediawiki-update-downloading": "새로운 업데이트를 다운로드하는 중",
