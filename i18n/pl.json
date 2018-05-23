@@ -1,0 +1,15 @@
+{
+	"@metadata": {
+		"authors": [
+			"Chrumps"
+		]
+	},
+	"updatemediawiki-current": "Aktualna wersja $1",
+	"updatemediawiki-update-nofound": "Brak aktualizacji",
+	"updatemediawiki-update-found": "Znaleziono nową aktualizację: $1",
+	"updatemediawiki-update-downloading": "Pobieranie nowej aktualizacji",
+	"updatemediawiki-update-saved": "Aktualizacja pobrana i zapisana",
+	"updatemediawiki-update-exist": "Aktualizacja już pobrana",
+	"updatemediawiki-update-install": "Zainstalować teraz?",
+	"updatemediawiki-update-updated": "MediaWiki zaktualizowana do wersji $1"
+}
