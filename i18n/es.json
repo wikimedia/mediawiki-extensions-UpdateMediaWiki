@@ -14,9 +14,9 @@
 	"updatemediawiki-update-saved": "Nueva actualización descargada y guardada",
 	"updatemediawiki-update-exist": "La actualización ya se ha descargado",
 	"updatemediawiki-update-copyready": "Copia lista",
-	"updatemediawiki-update-database": "¿Actualizar la base de datos ahora?",
+	"updatemediawiki-update-database": "¿Quieres actualizar la base de datos ahora?",
 	"updatemediawiki-update-updateready": "Actualización lista",
-	"updatemediawiki-update-install": "¿Instalar ahora?",
+	"updatemediawiki-update-install": "¿Quieres instalarla ahora?",
 	"updatemediawiki-update-updated": "MediaWiki se actualizó a la versión $1",
 	"updatemediawiki-update-error": "No se pudo obtener las últimas actualizaciones",
 	"updatemediawiki-update-aborted": "No se pudo guardar la actualización. Se interrumpió la operación"
