@@ -17,5 +17,6 @@
 	"updatemediawiki-update-updateready": "Uppdateringen är redo",
 	"updatemediawiki-update-install": "Installera nu?",
 	"updatemediawiki-update-updated": "MediaWiki uppdaterades till version $1",
-	"updatemediawiki-update-error": "Kunde inte hitta de senaste utgåvorna"
+	"updatemediawiki-update-error": "Kunde inte hitta de senaste utgåvorna",
+	"updatemediawiki-update-aborted": "Kunde inte spara ny uppdatering. Åtgärden avbröts"
 }
