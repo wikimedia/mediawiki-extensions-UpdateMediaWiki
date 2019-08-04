@@ -48,36 +48,36 @@ class SpecialUpdateMediaWiki extends SpecialPage {
 		$found = false;
 		if ( !empty( $aV ) ) {
 			// If we managed to access that file, then lets break up those release versions into an array.
-			$output->addWikiText( "== " . $this->msg( 'updatemediawiki-current', $wgVersion )->text() . " ==" );
+			$output->addWikiTextAsInterface( "== " . $this->msg( 'updatemediawiki-current', $wgVersion )->text() . " ==" );
 			$aV = str_replace( "<p>", "", $aV );
 			$aV = str_replace( "</p>", "", $aV );
 			$aV = str_replace( "\n", "", $aV );
 			$mainVersion = substr( $aV, 0, 4 );
 			if ( $aV > $wgVersion ) {
-				$output->addWikiText( "<p>" . $this->msg( 'updatemediawiki-update-found', "v{$aV}" )->text() . "</p>" );
+				$output->addWikiTextAsInterface( "<p>" . $this->msg( 'updatemediawiki-update-found', "v{$aV}" )->text() . "</p>" );
 				$found = true;
 				 // Download The File If We Do Not Have It
 				if ( !is_file( __DIR__ . "/../Updates/mediawiki-{$aV}.tar.gz" ) ) {
-					$output->addWikiText( "<p>" . wfMessage( 'updatemediawiki-update-downloading' )->text() . "</p>" );
+					$output->addWikiTextAsInterface( "<p>" . wfMessage( 'updatemediawiki-update-downloading' )->text() . "</p>" );
 					$newUpdate = file_get_contents( "https://download.wikimedia.org/mediawiki/{$mainVersion}/mediawiki-{$aV}.tar.gz" );
 					if ( !is_dir( __DIR__ . '/../Updates' ) ) {
 						mkdir( __DIR__ . "/../Updates", 0755 );
 					}
 					$dlHandler = fopen( __DIR__ . "/../Updates/mediawiki-{$aV}.tar.gz", 'w' );
 					if ( !fwrite( $dlHandler, $newUpdate ) ) {
-						$output->addWikiText( "<p>" . $this->msg( 'updatemediawiki-update-aborted' )->text() . "</p>" );
+						$output->addWikiTextAsInterface( "<p>" . $this->msg( 'updatemediawiki-update-aborted' )->text() . "</p>" );
 						exit();
 					}
 					fclose( $dlHandler );
-					$output->addWikiText( "<p>" . $this->msg( 'updatemediawiki-update-saved' )->text() . "</p>" );
+					$output->addWikiTextAsInterface( "<p>" . $this->msg( 'updatemediawiki-update-saved' )->text() . "</p>" );
 				} else {
-					$output->addWikiText( "<p>" . $this->msg( 'updatemediawiki-update-exist' )->text() . "</p>" );
+					$output->addWikiTextAsInterface( "<p>" . $this->msg( 'updatemediawiki-update-exist' )->text() . "</p>" );
 				}
 
 				if ( $par == "doUpdate" ) {
 					// Open The File And Do Stuff
 					$gz = new PharData( "/../Updates/mediawiki-{$aV}.tar.gz" );
-					$output->addWikiText( "<ul>" );
+					$output->addWikiTextAsInterface( "<ul>" );
 
 					// Make the directory if we need to...
 					if ( !is_dir( __DIR__ . "/../Updates{$aV}" ) ) {
@@ -90,22 +90,22 @@ class SpecialUpdateMediaWiki extends SpecialPage {
 					// unarchive from the tar
 					$phar = new PharData( "/../Updates/mediawiki-{$aV}.tar" );
 					$phar->extractTo( $IP );
-					$output->addWikiText( "<p>" . $this->msg( 'updatemediawiki-update-ready' )->text() . " [$IP/mw-config " . wfMessage( 'updatemediawiki-update-database' )->text() . "]</p>" );
+					$output->addWikiTextAsInterface( "<p>" . $this->msg( 'updatemediawiki-update-ready' )->text() . " [$IP/mw-config " . wfMessage( 'updatemediawiki-update-database' )->text() . "]</p>" );
 
-					$output->addWikiText( "</ul>" );
+					$output->addWikiTextAsInterface( "</ul>" );
 					$updated = true;
 				} else {
-					$output->addWikiText( "<p>" . $this->msg( 'updatemediawiki-update-updateready' )->text() . " [[Special:UpdateMediaWiki/doUpdate|" . $this->msg( 'updatemediawiki-update-install' )->text() . "]]</p>" );
+					$output->addWikiTextAsInterface( "<p>" . $this->msg( 'updatemediawiki-update-updateready' )->text() . " [[Special:UpdateMediaWiki/doUpdate|" . $this->msg( 'updatemediawiki-update-install' )->text() . "]]</p>" );
 				}
 			}
 		}
 
 		if ( $updated === true ) {
-			$output->addWikiText( '<p class="success">&raquo; ' . $this->msg( 'updatemediawiki-update-updated', $aV )->text() . '</p>' );
+			$output->addWikiTextAsInterface( '<p class="success">&raquo; ' . $this->msg( 'updatemediawiki-update-updated', $aV )->text() . '</p>' );
 		} elseif ( $found !== true ) {
-			$output->addWikiText( '<p>' . $this->msg( 'updatemediawiki-update-nofound' )->text() . '</p>' );
+			$output->addWikiTextAsInterface( '<p>' . $this->msg( 'updatemediawiki-update-nofound' )->text() . '</p>' );
 		} else {
-			$output->addWikiText( '<p>' . $this->msg( 'updatemediawiki-update-error' )->text() . '</p>' );
+			$output->addWikiTextAsInterface( '<p>' . $this->msg( 'updatemediawiki-update-error' )->text() . '</p>' );
 		}
 	}
 
