@@ -1,11 +1,12 @@
 {
 	"@metadata": {
 		"authors": [
-			"Gomoko"
+			"Gomoko",
+			"Thibaut120094"
 		]
 	},
-	"updatemediawiki": "Mettre à jour MédiaWiki",
-	"updatemediawiki-desc": "Permettre la mise à jour de MédiaWiki via une page spéciale",
+	"updatemediawiki": "Mettre à jour MediaWiki",
+	"updatemediawiki-desc": "Permettre la mise à jour de MediaWiki via une page spéciale",
 	"updatemediawiki-current": "Version actuelle $1",
 	"updatemediawiki-update-nofound": "Aucune mise à jour n’est disponible",
 	"updatemediawiki-update-found": "Nouvelle mise à jour trouvée : $1",
@@ -16,7 +17,7 @@
 	"updatemediawiki-update-database": "Mettre à jour la base de données maintenant ?",
 	"updatemediawiki-update-updateready": "Mise à jour prête",
 	"updatemediawiki-update-install": "Installer maintenant ?",
-	"updatemediawiki-update-updated": "MédiaWiki mis à jour en version $1",
+	"updatemediawiki-update-updated": "MediaWiki mis à jour en version $1",
 	"updatemediawiki-update-error": "Impossible de trouver les dernières versions",
 	"updatemediawiki-update-aborted": "Impossible d’enregistrer une nouvelle mise à jour. Opération annulée"
 }
