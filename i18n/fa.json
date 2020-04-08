@@ -1,0 +1,13 @@
+{
+	"@metadata": {
+		"authors": [
+			"FarsiNevis"
+		]
+	},
+	"updatemediawiki": "روزآمدسازی رسانه‌ویکی",
+	"updatemediawiki-update-nofound": "هیچ روزآمدسازی‌ای موجود نیست",
+	"updatemediawiki-update-downloading": "در حال بارگیری روزآمدسازی جدید",
+	"updatemediawiki-update-exist": "روزآمدسازی از قبل بارگیری شده است",
+	"updatemediawiki-update-database": "آیا اکنون دادگان روزآمد شود؟",
+	"updatemediawiki-update-updated": "رسانه‌ویکی به نسخهٔ $1 روزآمد شد"
+}
