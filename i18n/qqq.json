@@ -1,8 +1,10 @@
 {
 	"@metadata": {
-		"authors": []
+		"authors": [
+			"Umherirrender"
+		]
 	},
-	"updatemediawiki": "{{name}}",
+	"updatemediawiki": "{{doc-special}}",
 	"updatemediawiki-desc": "{{desc|name=Update MediaWiki|url=https://www.mediawiki.org/wiki/Extension:UpdateMediaWiki}}",
 	"updatemediawiki-current": "A header message",
 	"updatemediawiki-update-nofound": "A hint message",
