@@ -1,13 +1,14 @@
 {
 	"@metadata": {
 		"authors": [
+			"Eleassar",
 			"Janezdrilc"
 		]
 	},
 	"updatemediawiki": "Posodobi MediaWiki",
 	"updatemediawiki-desc": "Omogoči posodobitev MediaWiki preko posebne strani",
 	"updatemediawiki-current": "Trenutna različica $1",
-	"updatemediawiki-update-nofound": "Ni na voljo posodobitev",
+	"updatemediawiki-update-nofound": "Na voljo ni nobena posodobitev",
 	"updatemediawiki-update-found": "Najdena nova posodobitev: $1",
 	"updatemediawiki-update-downloading": "Prenašam novo posodobitev",
 	"updatemediawiki-update-saved": "Posodobitev naložena in shranjena",
