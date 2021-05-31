@@ -6,7 +6,7 @@
 		]
 	},
 	"updatemediawiki": "Posodobi MediaWiki",
-	"updatemediawiki-desc": "Omogoči posodobitev MediaWiki preko posebne strani",
+	"updatemediawiki-desc": "Omogoča posodobitev MediaWiki s posebne strani",
 	"updatemediawiki-current": "Trenutna različica $1",
 	"updatemediawiki-update-nofound": "Na voljo ni nobena posodobitev",
 	"updatemediawiki-update-found": "Najdena nova posodobitev: $1",
