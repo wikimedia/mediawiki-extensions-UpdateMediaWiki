@@ -1,8 +1,23 @@
 {
 	"@metadata": {
 		"authors": [
-			"BadDog"
+			"BadDog",
+			"Kizule"
 		]
 	},
-	"updatemediawiki-current": "Актуелна верзија $1"
+	"updatemediawiki": "Ажурирај Медијавики",
+	"updatemediawiki-desc": "Омогућава ажурирање Медијавикија путем посебне странице",
+	"updatemediawiki-current": "Актуелна верзија $1",
+	"updatemediawiki-update-nofound": "Ажурирање није доступно",
+	"updatemediawiki-update-found": "Ново ажурирање је доступно: $1",
+	"updatemediawiki-update-downloading": "Преузимање новог ажурирања",
+	"updatemediawiki-update-saved": "Ажурирање је преузето и сачувано",
+	"updatemediawiki-update-exist": "Ажурирање је већ преузето",
+	"updatemediawiki-update-copyready": "Копирање је спремно",
+	"updatemediawiki-update-database": "Ажурирати базу података сада?",
+	"updatemediawiki-update-updateready": "Ажурирање је преузето",
+	"updatemediawiki-update-install": "Инсталирати сада?",
+	"updatemediawiki-update-updated": "Медијавики је ажуриран на верзију $1",
+	"updatemediawiki-update-error": "Није могуће пронаћи најновија издања",
+	"updatemediawiki-update-aborted": "Није могуће сачувати ново ажурирање. Операција је прекинута"
 }
