@@ -2,12 +2,15 @@
 <ruleset>
 	<rule ref="./vendor/mediawiki/mediawiki-codesniffer/MediaWiki">
 		<exclude name="Generic.Files.LineLength.TooLong" />
-		<exclude name="MediaWiki.Commenting.FunctionComment.MissingDocumentationProtected" />
 		<exclude name="MediaWiki.Commenting.FunctionComment.MissingDocumentationPublic" />
-		<exclude name="MediaWiki.NamingConventions.ValidGlobalName.allowedPrefix" />
 		<exclude name="MediaWiki.Usage.ExtendClassUsage.FunctionVarUsage" />
 		<exclude name="MediaWiki.WhiteSpace.SpaceBeforeSingleLineComment.NewLineComment" />
 		<exclude name="Squiz.Scope.MethodScope.Missing" />
+	</rule>
+	<rule ref="MediaWiki.NamingConventions.ValidGlobalName">
+		<properties>
+			<property name="ignoreList" type="array" value="$IP" />
+		</properties>
 	</rule>
 	<file>.</file>
 	<arg name="extensions" value="php"/>
