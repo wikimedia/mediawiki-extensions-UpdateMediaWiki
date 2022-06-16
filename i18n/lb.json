@@ -16,7 +16,7 @@
 	"updatemediawiki-update-database": "D'Datebank elo aktualiséieren?",
 	"updatemediawiki-update-updateready": "Aktualiséierung prett",
 	"updatemediawiki-update-install": "Elo installéieren?",
-	"updatemediawiki-update-updated": "Mediawiki aktualiséiert op d'Versioun $1",
+	"updatemediawiki-update-updated": "MediaWiki aktualiséiert op d'Versioun $1",
 	"updatemediawiki-update-error": "Déi neist Versioune konnten net fonnt ginn",
 	"updatemediawiki-update-aborted": "D'Aktualiséierung konnt net gespäichert ginn. Operatioun ofgebrach"
 }
