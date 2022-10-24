@@ -1,0 +1,12 @@
+{
+	"@metadata": {
+		"authors": [
+			"Vlad5250"
+		]
+	},
+	"updatemediawiki": "Podnova MediaWikija",
+	"updatemediawiki-desc": "Omogućuje podnovu MediaWikija putem posebne stranice",
+	"updatemediawiki-current": "Trenutna verzija $1",
+	"updatemediawiki-update-nofound": "Nema podnove",
+	"updatemediawiki-update-found": "Pronađena podnova: $1"
+}
