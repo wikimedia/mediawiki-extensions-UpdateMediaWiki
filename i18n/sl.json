@@ -12,7 +12,7 @@
 	"updatemediawiki-update-found": "Najdena nova posodobitev: $1",
 	"updatemediawiki-update-downloading": "Prenašam novo posodobitev",
 	"updatemediawiki-update-saved": "Posodobitev naložena in shranjena",
-	"updatemediawiki-update-exist": "Posodobitev je že prenešena",
+	"updatemediawiki-update-exist": "Posodobitev je že prenesena",
 	"updatemediawiki-update-copyready": "Kopiranje je pripravljeno",
 	"updatemediawiki-update-database": "Posodobim podatkovno zbirko sedaj?",
 	"updatemediawiki-update-updateready": "Posodobitev je pripravljena",
