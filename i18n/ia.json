@@ -1,0 +1,22 @@
+{
+	"@metadata": {
+		"authors": [
+			"McDutchie"
+		]
+	},
+	"updatemediawiki": "Actualisar MediaWiki",
+	"updatemediawiki-desc": "Permitte le actualisation de MediaWiki per medio de un pagina special",
+	"updatemediawiki-current": "Version actual $1",
+	"updatemediawiki-update-nofound": "Necun actualisation es disponibile",
+	"updatemediawiki-update-found": "Nove actualisation trovate: $1",
+	"updatemediawiki-update-downloading": "Discarga nove actualisation",
+	"updatemediawiki-update-saved": "Actualisation discargate e salveguardate",
+	"updatemediawiki-update-exist": "Actualisation ja discargate",
+	"updatemediawiki-update-copyready": "Copia preste",
+	"updatemediawiki-update-database": "Actualisar le base de datos ora?",
+	"updatemediawiki-update-updateready": "Actualisation preste",
+	"updatemediawiki-update-install": "Installar ora?",
+	"updatemediawiki-update-updated": "MediaWiki ha essite actualisate al version $1",
+	"updatemediawiki-update-error": "Non poteva trovar le ultime editiones",
+	"updatemediawiki-update-aborted": "Non poteva salveguardar le nove actualisation. Operation abortate."
+}
