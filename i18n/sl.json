@@ -14,9 +14,9 @@
 	"updatemediawiki-update-saved": "Posodobitev naložena in shranjena",
 	"updatemediawiki-update-exist": "Posodobitev je že prenesena",
 	"updatemediawiki-update-copyready": "Kopiranje je pripravljeno",
-	"updatemediawiki-update-database": "Posodobim podatkovno zbirko sedaj?",
+	"updatemediawiki-update-database": "Posodobim podatkovno zbirko zdaj?",
 	"updatemediawiki-update-updateready": "Posodobitev je pripravljena",
-	"updatemediawiki-update-install": "Inštaliram sedaj?",
+	"updatemediawiki-update-install": "Namestitev zdaj?",
 	"updatemediawiki-update-updated": "MediaWiki posodobljen na različico $1",
 	"updatemediawiki-update-error": "Ni bilo mogoče najti najnovejših izdaj",
 	"updatemediawiki-update-aborted": "Ni bilo mogoče shraniti nove posodobitve. Postopek prekinjen"
