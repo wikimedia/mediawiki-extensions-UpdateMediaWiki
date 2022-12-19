@@ -1,0 +1,22 @@
+{
+	"@metadata": {
+		"authors": [
+			"Toliño"
+		]
+	},
+	"updatemediawiki": "Actualizar MediaWiki",
+	"updatemediawiki-desc": "Permite actualizar MediaWiki a través dunha páxina especial",
+	"updatemediawiki-current": "Versión actual: $1",
+	"updatemediawiki-update-nofound": "Non hai ningunha actualización dispoñible",
+	"updatemediawiki-update-found": "Atopouse unha nova actualización: $1",
+	"updatemediawiki-update-downloading": "Descargando a nova actualización",
+	"updatemediawiki-update-saved": "Actualización descargada e gardada",
+	"updatemediawiki-update-exist": "Actualización xa descargada",
+	"updatemediawiki-update-copyready": "A copia está lista",
+	"updatemediawiki-update-database": "Quere actualizar a base de datos agora?",
+	"updatemediawiki-update-updateready": "A actualización está lista",
+	"updatemediawiki-update-install": "Quere instalala agora?",
+	"updatemediawiki-update-updated": "MediaWiki actualizouse á versión $1",
+	"updatemediawiki-update-error": "Non se puideron atopar os últimos lanzamentos",
+	"updatemediawiki-update-aborted": "Non se puido gardar a nova actualización. Operación cancelada."
+}
