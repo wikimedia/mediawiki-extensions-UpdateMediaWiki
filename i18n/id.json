@@ -1,8 +1,9 @@
 {
 	"@metadata": {
 		"authors": [
+			"Agam Riyandana",
 			"DARMAS BUDI SANTOSO"
 		]
 	},
-	"updatemediawiki-update-error": "Could not find latest realeases"
+	"updatemediawiki-update-error": "Tidak dapat menemukan realease terbaru"
 }
