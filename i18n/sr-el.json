@@ -1,0 +1,20 @@
+{
+	"@metadata": {
+		"authors": []
+	},
+	"updatemediawiki": "Ažuriraj Medijaviki",
+	"updatemediawiki-desc": "Omogućava ažuriranje Medijavikija putem posebne stranice",
+	"updatemediawiki-current": "Aktuelna verzija $1",
+	"updatemediawiki-update-nofound": "Ažuriranje nije dostupno",
+	"updatemediawiki-update-found": "Novo ažuriranje je dostupno: $1",
+	"updatemediawiki-update-downloading": "Preuzimanje novog ažuriranja",
+	"updatemediawiki-update-saved": "Ažuriranje je preuzeto i sačuvano",
+	"updatemediawiki-update-exist": "Ažuriranje je već preuzeto",
+	"updatemediawiki-update-copyready": "Kopiranje je spremno",
+	"updatemediawiki-update-database": "Ažurirati bazu podataka sada?",
+	"updatemediawiki-update-updateready": "Ažuriranje je preuzeto",
+	"updatemediawiki-update-install": "Instalirati sada?",
+	"updatemediawiki-update-updated": "Medijaviki je ažuriran na verziju $1",
+	"updatemediawiki-update-error": "Nije moguće pronaći najnovija izdanja",
+	"updatemediawiki-update-aborted": "Nije moguće sačuvati novo ažuriranje. Operacija je prekinuta"
+}

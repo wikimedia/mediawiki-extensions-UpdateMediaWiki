@@ -1,10 +1,12 @@
 {
 	"@metadata": {
 		"authors": [
-			"S2KTS"
+			"S2KTS",
+			"Buehl"
 		]
 	},
 	"updatemediawiki-current": "現在の版 $1",
 	"updatemediawiki-update-nofound": "更新情報はありません",
-	"updatemediawiki-update-downloading": "新しい更新情報をダウンロードしています"
+	"updatemediawiki-update-downloading": "新しい更新情報をダウンロードしています",
+	"updatemediawiki-update-error": "最新のリリースを見つけられませんでした。"
 }
