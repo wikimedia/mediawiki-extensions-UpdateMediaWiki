@@ -1,0 +1,15 @@
+{
+	"@metadata": {
+		"authors": [
+			"Afalau"
+		]
+	},
+	"updatemediawiki": "Diweddaru MediaWiki",
+	"updatemediawiki-desc": "Mae hwn yn caniatáu diweddaru MediaWiki trwy dudalen arbennig",
+	"updatemediawiki-current": "Fersiwn gyfredol $1",
+	"updatemediawiki-update-nofound": "Dim diweddariad ar gael",
+	"updatemediawiki-update-found": "Canfuwyd diweddariad newydd: $1",
+	"updatemediawiki-update-downloading": "Wrthi'n lawrlwytho diweddariad newydd",
+	"updatemediawiki-update-updateready": "Diweddariad yn barod",
+	"updatemediawiki-update-install": "Gosod nawr?"
+}
