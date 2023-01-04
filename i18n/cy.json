@@ -10,6 +10,9 @@
 	"updatemediawiki-update-nofound": "Dim diweddariad ar gael",
 	"updatemediawiki-update-found": "Canfuwyd diweddariad newydd: $1",
 	"updatemediawiki-update-downloading": "Wrthi'n lawrlwytho diweddariad newydd",
+	"updatemediawiki-update-copyready": "Mae'r copi yn barod",
+	"updatemediawiki-update-database": "Diweddaru'r gronfa ddata nawr?",
 	"updatemediawiki-update-updateready": "Diweddariad yn barod",
-	"updatemediawiki-update-install": "Gosod nawr?"
+	"updatemediawiki-update-install": "Gosod nawr?",
+	"updatemediawiki-update-error": "Ni ellir dod o hyd i'r fersiynau diweddaraf"
 }
