@@ -4,9 +4,19 @@
 			"Vlad5250"
 		]
 	},
-	"updatemediawiki": "Podnova MediaWikija",
-	"updatemediawiki-desc": "Omogućuje podnovu MediaWikija putem posebne stranice",
+	"updatemediawiki": "Podnova Medijavikija",
+	"updatemediawiki-desc": "Omogućuje podnovu Medijavikija putem posebne stranice",
 	"updatemediawiki-current": "Trenutna verzija $1",
 	"updatemediawiki-update-nofound": "Nema podnove",
-	"updatemediawiki-update-found": "Pronađena podnova: $1"
+	"updatemediawiki-update-found": "Pronađena podnova: $1",
+	"updatemediawiki-update-downloading": "Preuzimanje podnove",
+	"updatemediawiki-update-saved": "Podnova je preuzeta i sačuvana",
+	"updatemediawiki-update-exist": "Podnova je već preuzeta",
+	"updatemediawiki-update-copyready": "Kopiranje je spremno",
+	"updatemediawiki-update-database": "Podnoviti bazu podataka sada?",
+	"updatemediawiki-update-updateready": "Podnova je spremna",
+	"updatemediawiki-update-install": "Instalirati sada?",
+	"updatemediawiki-update-updated": "Medijaviki je podnovljen na verziju $1",
+	"updatemediawiki-update-error": "Nije moguće pronaći najnovija izdanja",
+	"updatemediawiki-update-aborted": "Nije moguće sačuvati podnovu. Operacija je prekinuta"
 }
