@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Mainframe98"
+			"Mainframe98",
+			"McDutchie"
 		]
 	},
 	"updatemediawiki": "MediaWiki bijwerken",
@@ -16,5 +17,6 @@
 	"updatemediawiki-update-database": "Database nu bijwerken?",
 	"updatemediawiki-update-updateready": "Update gereed",
 	"updatemediawiki-update-install": "Nu installeren?",
-	"updatemediawiki-update-updated": "MediaWiki is bijgewerkt naar versie $1"
+	"updatemediawiki-update-updated": "MediaWiki is bijgewerkt naar versie $1",
+	"updatemediawiki-update-error": "Kon de laatste uitgaven niet vinden"
 }
