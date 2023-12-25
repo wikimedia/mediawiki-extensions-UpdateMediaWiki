@@ -2,13 +2,14 @@
 	"@metadata": {
 		"authors": [
 			"Aftabuzzaman",
-			"আফতাবুজ্জামান"
+			"আফতাবুজ্জামান",
+			"Aishik Rehman"
 		]
 	},
 	"updatemediawiki": "মিডিয়াউইকি হালনাগাদ",
 	"updatemediawiki-desc": "বিশেষ পাতার মাধ্যমে মিডিয়াউইকি হালনাগাদ করার অনুমতি দেয়",
 	"updatemediawiki-current": "বর্তমান সংস্করণ $1",
-	"updatemediawiki-update-nofound": "কোন হালনাগাদ উপলব্ধ নেই",
+	"updatemediawiki-update-nofound": "কোনো হালনাগাদ উপলব্ধ নেই",
 	"updatemediawiki-update-found": "নতুন হালনাগাদ পাওয়া গেছে: $1",
 	"updatemediawiki-update-downloading": "নতুন হালনাগাদ ডাউনলোড করা হচ্ছে",
 	"updatemediawiki-update-saved": "হালনাগাদ ডাউনলোড ও সংরক্ষণ করা হয়েছে",
