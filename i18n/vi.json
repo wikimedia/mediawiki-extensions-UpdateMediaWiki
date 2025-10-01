@@ -1,8 +1,9 @@
 {
 	"@metadata": {
 		"authors": [
-			"Nguyenphutrong2"
+			"Nguyenphutrong2",
+			"Nvdtn19"
 		]
 	},
-	"updatemediawiki-update-error": "Không thể tìm thấy bất động sản mới nhất"
+	"updatemediawiki-update-error": "Không thể tìm bản phát hành mới nhất"
 }
