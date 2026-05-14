@@ -41,7 +41,7 @@ class SpecialUpdateMediaWiki extends SpecialPage {
 		$output = $this->getOutput();
 		$this->setHeaders();
 
-		global $wgVersion, $IP;
+		global $IP;
 		$getVersion = json_decode( file_get_contents( 'https://www.mediawiki.org/w/api.php?action=parse&format=json&text=%7B%7B%23invoke%3AVersion%7Cget%7Cstable%7Cversion%7D%7D&prop=text&disablelimitreport=1&disableeditsection=1&preview=1&disabletoc=1&contentmodel=wikitext' ), true );
 		if ( !$getVersion ) {
 			die( 'ERROR' );
@@ -51,12 +51,12 @@ class SpecialUpdateMediaWiki extends SpecialPage {
 		$found = false;
 		if ( !empty( $aV ) ) {
 			// If we managed to access that file, then lets break up those release versions into an array.
-			$output->addWikiTextAsInterface( "== " . $this->msg( 'updatemediawiki-current', $wgVersion )->text() . " ==" );
+			$output->addWikiTextAsInterface( "== " . $this->msg( 'updatemediawiki-current', MW_VERSION )->text() . " ==" );
 			$aV = str_replace( "<p>", "", $aV );
 			$aV = str_replace( "</p>", "", $aV );
 			$aV = str_replace( "\n", "", $aV );
 			$mainVersion = substr( $aV, 0, 4 );
-			if ( $aV > $wgVersion ) {
+			if ( $aV > MW_VERSION ) {
 				$output->addWikiTextAsInterface( "<p>" . $this->msg( 'updatemediawiki-update-found', "v{$aV}" )->text() . "</p>" );
 				$found = true;
 				 // Download The File If We Do Not Have It
