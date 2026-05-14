@@ -9,7 +9,7 @@
 	"license-name": "GPL-2.0-or-later",
 	"type": "extensions",
 	"requires": {
-		"MediaWiki": ">= 1.33.3"
+		"MediaWiki": ">= 1.46.0"
 	},
 	"SpecialPages": {
 		"UpdateMediaWiki": "SpecialUpdateMediaWiki"

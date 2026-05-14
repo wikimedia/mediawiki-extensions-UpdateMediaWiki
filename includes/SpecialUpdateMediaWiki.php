@@ -27,7 +27,12 @@
 class SpecialUpdateMediaWiki extends SpecialPage {
 
 	function __construct() {
-		parent::__construct( 'UpdateMediaWiki', 'updatecore' );
+		parent::__construct( 'UpdateMediaWiki' );
+	}
+
+	/** @inheritDoc */
+	public function getRestriction(): string {
+		return 'updatecore';
 	}
 
 	function execute( $par ) {
