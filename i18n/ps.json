@@ -1,0 +1,22 @@
+{
+	"@metadata": {
+		"authors": [
+			"شاه زمان پټان"
+		]
+	},
+	"updatemediawiki": "مېډياويکي هم‌مهالول",
+	"updatemediawiki-desc": "د يو ځانگړي مخ له لارې د مېډياويکي هم‌مهالولو ته اجازه ورکوي",
+	"updatemediawiki-current": "اوسنۍ بلبڼه $1",
+	"updatemediawiki-update-nofound": "هېڅ هم‌مهالونې شتون نه‌لري",
+	"updatemediawiki-update-found": "نوې هم‌مهالېدنه وموندل شوه: $1",
+	"updatemediawiki-update-downloading": "نوې هم‌مهالېدنه راکښته‌کول",
+	"updatemediawiki-update-saved": "هم‌مهالېدنه راکښته او خوندي شوه",
+	"updatemediawiki-update-exist": "هم‌مهالېدنه لادمخه راکښته شوې",
+	"updatemediawiki-update-copyready": "لمېسل چمتو دي",
+	"updatemediawiki-update-database": "اومتوک اډانه اوس هم‌مهاله کړي؟",
+	"updatemediawiki-update-updateready": "هم‌مهالېدنه چمتو ده",
+	"updatemediawiki-update-install": "اوس يې ولگوي؟",
+	"updatemediawiki-update-updated": "مېډياويکي $1 بلبڼې ته هم‌مهاله شوه",
+	"updatemediawiki-update-error": "وروستۍ خپرېدنه نشي موندلی",
+	"updatemediawiki-update-aborted": "نوې هم‌مهالېدنه خوندي کېدای نشي.\nعمليات لغوه شول"
+}
