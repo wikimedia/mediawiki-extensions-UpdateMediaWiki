@@ -1,0 +1,22 @@
+{
+	"@metadata": {
+		"authors": [
+			"AhmedG612"
+		]
+	},
+	"updatemediawiki": "Cusboonaysii MediaWiki",
+	"updatemediawiki-desc": "Waxay oggolaanaysaa cusboonaysiinta MediaWiki iyada oo loo marayo bog gaar ah",
+	"updatemediawiki-current": "Nooca hadda jira $1",
+	"updatemediawiki-update-nofound": "Ma jiro wax cusboonaysiin ah oo la heli karo",
+	"updatemediawiki-update-found": "Cusboonaysiinta cusub ee la helay: $1",
+	"updatemediawiki-update-downloading": "Soo dejinaya cusboonaysiinta cusub",
+	"updatemediawiki-update-saved": "Cusboonaysiinta waa la soo dejiyey waana la kaydiyey",
+	"updatemediawiki-update-exist": "Cusboonaysiinta horey ayaa loo soo dejiyay",
+	"updatemediawiki-update-copyready": "Nuqul diyaar ah",
+	"updatemediawiki-update-database": "Cusboonaysii xogta kaydka hadda?",
+	"updatemediawiki-update-updateready": "Cusboonaysiinta waa diyaar",
+	"updatemediawiki-update-install": "Hadda rakib?",
+	"updatemediawiki-update-updated": "MediaWiki waxaa loo cusboonaysiiyey nooca $1",
+	"updatemediawiki-update-error": "Lama helin sii deyntii ugu dambeysay",
+	"updatemediawiki-update-aborted": "Lama kaydin karin cusboonaysiinta cusub. Hawlgalkii waa la joojiyey"
+}
