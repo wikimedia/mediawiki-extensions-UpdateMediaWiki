@@ -1,0 +1,22 @@
+{
+	"@metadata": {
+		"authors": [
+			"Dj"
+		]
+	},
+	"updatemediawiki": "MediaWiki frissítése",
+	"updatemediawiki-desc": "Lehetővé teszi a MediaWiki frissítését egy speciális lapon keresztül.",
+	"updatemediawiki-current": "Jelenlegi verzió: $1",
+	"updatemediawiki-update-nofound": "Nincs elérhető frissítés.",
+	"updatemediawiki-update-found": "Új frissítés érhető el: $1",
+	"updatemediawiki-update-downloading": "Az új frissítés letöltése",
+	"updatemediawiki-update-saved": "A frissítés letöltve és elmentve",
+	"updatemediawiki-update-exist": "A frissítés már le van töltve",
+	"updatemediawiki-update-copyready": "Másolásra kész",
+	"updatemediawiki-update-database": "Frissíti most az adatbázist?",
+	"updatemediawiki-update-updateready": "A frissítés kész",
+	"updatemediawiki-update-install": "Telepítés most?",
+	"updatemediawiki-update-updated": "A MediaWiki frissítve a(z) $1 verzióra",
+	"updatemediawiki-update-error": "Nem találhatók a legújabb kiadások.",
+	"updatemediawiki-update-aborted": "Nem sikerült menteni az új frissítést. A művelet megszakítva."
+}
